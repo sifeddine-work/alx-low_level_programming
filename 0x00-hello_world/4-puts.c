@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - A c program that print a Text with puts function
- *return: 0 (Success)
+ *Return: Always 0 (Success)
 */
 int main(void)
 {
