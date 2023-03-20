@@ -11,13 +11,15 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		++j = 49;
 		while (j <= 57)
 		{
+			if (i > j)
+			{
 			putchar(i);
 			putchar(j);
 			putchar(',');
 			putchar(' ');
+			}
 			if (i == 56 && j == 57)
 				continue;
 			j++;
