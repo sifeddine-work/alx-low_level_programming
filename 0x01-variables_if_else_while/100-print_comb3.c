@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		while (j <= 57)
+		for (j = 49; j <= 57; j++)
 		{
 			if (i > j)
 			{
@@ -22,7 +22,6 @@ int main(void)
 			}
 			if (i == 56 && j == 57)
 				continue;
-			j++;
 		}
 	}
 	return (0);
