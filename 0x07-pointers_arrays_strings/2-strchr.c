@@ -3,7 +3,7 @@
  * _strchr - Entry point
  * @s: pointer input
  * @c: character input
- * Return: 0 (SUCCESS)
+ * Return: pointer to char
  */
 char *_strchr(char *s, char c)
 {
@@ -17,5 +17,5 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return (0);
+	return ('\0');
 }
