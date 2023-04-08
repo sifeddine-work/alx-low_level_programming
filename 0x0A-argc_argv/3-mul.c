@@ -5,7 +5,7 @@
  * Description: program that prints the number of arguments passed into it.
  * @argc: Number of command line arguments
  * @argv: tabla point to character
- * Return: (0)
+ * Return: (0) or (1)
  */
 int main(int argc, char *argv[])
 {
@@ -16,11 +16,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		mul1 = atoi(argv[1]);
-		mul2 = atoi(argv[2]);
-		printf("%d\n", mul1 * mul2);
-		return (0);
-	}
+	mul1 = atoi(argv[1]);
+	mul2 = atoi(argv[2]);
+	printf("%d\n", mul1 * mul2);
+	return (0);
 }
