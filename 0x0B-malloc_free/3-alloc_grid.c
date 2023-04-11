@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * alloc_grid - function returns a pointer to a 2 dimensional array of integers
- * @with: integer
+ * @width: integer
  * @height: integer
  * Return: array 2 dimensional
  */
