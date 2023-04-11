@@ -23,9 +23,7 @@ int strsize(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *s3;
-	int size1;
-	int size2;
-	int len = 0;
+	int size1, size2, len;
 
 	if (s1 == NULL)
 		s1 = "\0";
