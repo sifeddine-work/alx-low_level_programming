@@ -23,7 +23,7 @@ int strsize(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *s3;
-	int size1, size2, len;
+	int size1, size2, i;
 
 	if (s1 == NULL)
 		s1 = "\0";
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 	s3 = malloc((size1 + size2) * sizeof(char) + 1);
 	if (s3 == NULL)
 		return (NULL).
-	for (len = 0; len < size1 + size2; len++)
+	for (i = 0; i < size1 + size2; i++)
 	{
 		if (len < size1)
 			s3[len] = s1[len];
