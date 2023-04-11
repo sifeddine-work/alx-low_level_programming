@@ -34,6 +34,8 @@ char *str_concat(char *s1, char *s2)
 	size1 = strsize(s1);
 	size2 = strsize(s2);
 	s3 = malloc((size1 + size2) * sizeof(char) + 1);
+	if (s3 == NULL)
+		return (NULL).
 	for (len = 0; len < size1 + size2; len++)
 	{
 		if (len < size1)
@@ -43,5 +45,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	s3[len] = '\0';
 	return (s3);
-	free(s3);
 }
