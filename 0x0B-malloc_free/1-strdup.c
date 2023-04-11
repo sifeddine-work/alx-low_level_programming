@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	char *cpstr;
 	int len = 0;
 	
-	if (str == NULL || cpstr == NULL)
+	if (str == NULL)
 		return (NULL);
 	while (*str =! '\0')
 	{
@@ -19,6 +19,8 @@ char *_strdup(char *str)
 		str++;
 	}
 	cpstr = malloc(len * sizeof(*str) + 1);
+	if (cpstr == NULL)
+		return (NULL);
 	while (len--)
 	{
 		cpstr[len] = str[len];
