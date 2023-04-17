@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 /**
  * free_dog - function with 1 parameter
  * @d: pointer to structure dog_t
