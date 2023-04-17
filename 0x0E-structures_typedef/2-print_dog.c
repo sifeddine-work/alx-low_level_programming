@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdio.h>
 /**
  * print_dog - function with one parametre
  * @d: pointer point to structure
