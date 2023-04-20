@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - A function with two arguments
+ * sum_them_all - function with two arguments
  * @n: int data structure - first argument
  *
  * Description: returns the sum of all its parameters
