@@ -12,9 +12,10 @@ int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
 	int add = 0, number;
-	va_list para;
 
-	va_start(paras, n);
+	va_list parameters;
+
+	va_start(parameters, n);
 
 	if (n == 0)
 	{
@@ -23,10 +24,10 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		number = va_arg(para, int);
+		number = va_arg(parameters, int);
 		add = add + number;
 	}
 
-	va_end(para);
+	va_end(parameters);
 	return (add);
 }
