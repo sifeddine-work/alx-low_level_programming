@@ -3,7 +3,7 @@
 void first(void) __attribute__ ((constructor));
 
 /**
- * myStartupFun - print before main functio
+ * first - print before main functio
  *
  * Return: void
  */
