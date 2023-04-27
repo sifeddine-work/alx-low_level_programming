@@ -5,7 +5,7 @@
  * @head: pointer to list
  * @str: string
  *
- * Return
+ * Return: list
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
