@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void myStartupFun(void) __attribute__ ((constructor));
+void first(void) __attribute__ ((constructor));
 
 /**
  * myStartupFun - print before main functio
@@ -8,7 +8,7 @@ void myStartupFun(void) __attribute__ ((constructor));
  * Return: void
  */
 
-void myStartupFun(void)
+void first(void)
 {
 	printf("You're beat! and yet
 			, you must allow,\nI bore my house upon my back!\n");
