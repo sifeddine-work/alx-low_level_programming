@@ -9,6 +9,6 @@ sleep 3
 git add .
 read  message
 git commit -m "$message"
-echo "\n\n"
+echo \n\n
 
 git push
