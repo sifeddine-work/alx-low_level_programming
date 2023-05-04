@@ -16,7 +16,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	if (index > 64)
 		return (-1);
 	hd = index;
-	for (idx = 1; hd > 0; i *= 2, hd--)
+	for (idx = 1; hd > 0; idx *= 2, hd--)
 		;
 
 	if ((*n >> index) & 1)
