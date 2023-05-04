@@ -13,8 +13,10 @@ void print_binary(unsigned long int n)
 	int num = 0;
 
 	if (n == 0)
+	{
 		printf("0");
 		return;
+	}
 
 	for (tmp = n; (tmp >>= 1) > 0; num++)
 		;
