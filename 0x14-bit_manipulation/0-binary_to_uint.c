@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * int binary_to_uint - function that converts a binary number to an unsigned in
+ * binary_to_uint - name function
  * @b: const char (string of 0 and 1)
+ *
+ * Description: function that converts a binary number to an unsigned int
  *
  * Return: unsigned int
  */
@@ -12,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0, pow = 1;
 	int l = 0;
 
-	if (b = NULL)
+	if (b == NULL)
 		return (0);
 
 	for (; b[l]; l++)
@@ -21,10 +23,10 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	}
 
-	for (len--; len >= 0; len--, pow *= 2)
+	for (l--; l >= 0; l--, pow *= 2)
 	{
 		if (b[l] == '1')
-			result += power;
+			result += pow;
 	}
 
 	return (result);
