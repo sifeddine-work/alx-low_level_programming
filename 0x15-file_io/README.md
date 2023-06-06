@@ -1,3 +1,0 @@
-# 0x15-file io #
-- WELCOME TO THE FILS MANIPULATION
-
